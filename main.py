@@ -259,7 +259,7 @@ def in_game_callback_handler(update: Update, context: CallbackContext)\
         message += 'Как должно писаться слово: '
     else:
         message += 'Что должно быть на месте многоточия: '
-    message += f'<b>{WORDS[current_word_id].word}</b>?'
+    message += f'<b>"{WORDS[current_word_id].word}"</b>?'
 
     query.edit_message_text(
         message,
